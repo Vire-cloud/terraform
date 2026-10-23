@@ -1,0 +1,23 @@
+# Terraform providers
+.terraform/
+**/.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Terraform plan
+tfplan
+*.tfplan
+
+# Sensitive variables
+*.tfvars
+*.tfvars.json
+
+# Environment files
+.env
+.env.*
+
+# Crash logs
+crash.log
+crash.*.log
