@@ -1,18 +1,13 @@
 variable "project_id" {
-  description = "GCP Project ID"
-  type        = string
+  type = string
 }
 
 variable "region" {
-  description = "GCP Region"
-  type        = string
-  default     = "asia-south1"
+  type = string
 }
 
 variable "zone" {
-  description = "GCP Zone"
-  type        = string
-  default     = "asia-south1-a"
+  type = string
 }
 
 variable "vpc_name" {
@@ -21,11 +16,18 @@ variable "vpc_name" {
 }
 
 variable "subnet_name" {
-  description = "Subnet Name"
-  type        = string
+  type = string
 }
 
 variable "subnet_cidr" {
-  description = "Subnet CIDR"
-  type        = string
+  type = string
+}
+variable "pub_vpc_name" {
+  type = string
+}
+variable "pub_subnet_name" {
+  type = string
+}
+variable "pub_subnet_cidr" {
+  type = string
 }
