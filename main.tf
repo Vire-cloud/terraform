@@ -3,8 +3,8 @@ resource "google_compute_network" "private" {
   auto_create_subnetworks = false
 }
 resource "google_compute_subnetwork" "private" {
-  name = var.subnet_name
+  name          = var.subnet_name
   ip_cidr_range = var.subnet_cidr
-  region = var.region
-  network = google_compute_network.private.id
+  region        = var.region
+  network       = google_compute_network.private.id
 }
